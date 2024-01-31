@@ -1,0 +1,58 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+:root {
+  --color-primary: #ffd400;
+  --color-light: #c2fffb;
+  --color-white: #fafafa;
+  --color-dark: #010100;
+
+  --ifm-color-primary: #592d4f;
+  --ifm-color-primary-dark: #502947;
+  --ifm-color-primary-darker: #4c2643;
+  --ifm-color-primary-darkest: #3e2037;
+  --ifm-color-primary-light: #623257;
+  --ifm-color-primary-lighter: #66345b;
+  --ifm-color-primary-lightest: #743a67;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #ffd400;
+  --ifm-color-primary-dark: #e6bf00;
+  --ifm-color-primary-darker: #d9b400;
+  --ifm-color-primary-darkest: #b39400;
+  --ifm-color-primary-light: #ffd81a;
+  --ifm-color-primary-lighter: #ffda26;
+  --ifm-color-primary-lightest: #ffe14d;
+}
+
+/* .heroPrimary {
+  --ifm-hero-background-color: var(--color-primary);
+  --ifm-hero-text-color: var(--color-dark);
+} */
+
+table th {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-font-color-base-inverse);
+}
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
