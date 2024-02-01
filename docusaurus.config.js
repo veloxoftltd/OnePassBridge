@@ -6,6 +6,9 @@
 
 import { themes as prismThemes } from "prism-react-renderer";
 
+const cofundedText =
+  "Co-funded by the European Union. This project has received funding from the European Union’s Horizon Europe programme under grant agreement No 101102657. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or European Health and Digital Executive Agency (HADEA). Neither the European Union nor the granting authority can be held responsible for them.";
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "OnePass Bridge - wiki",
@@ -21,7 +24,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  projectName: "OnePassBridge",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -63,7 +66,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
         title: "Home",
@@ -88,48 +90,12 @@ const config = {
       },
       footer: {
         style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        logo: {
+          alt: "Co funded by the EU",
+          src: "img/co-fundedbytheEU-white.png",
+          height: 51,
+        },
+        copyright: `${cofundedText} <br> Copyright © ${new Date().getFullYear()} OnePass Bridge`,
       },
       prism: {
         theme: prismThemes.github,

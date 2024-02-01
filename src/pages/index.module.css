@@ -43,6 +43,8 @@ table th {
   text-align: center;
   position: relative;
   overflow: hidden;
+
+  min-height: 40vh;
 }
 
 @media screen and (max-width: 996px) {

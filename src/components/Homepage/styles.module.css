@@ -1,0 +1,43 @@
+.header h2 {
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.partners {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.partnerImg {
+  max-height: 120px;
+  max-width: 250px;
+}
+
+.partnerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.partnerBox img {
+  margin: 32px 0;
+}
+
+.partnerText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.partnerText h3 {
+  margin: 0;
+}
+
+.rowPartner {
+  margin: 16px 0;
+}
