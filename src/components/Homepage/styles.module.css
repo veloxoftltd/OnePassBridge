@@ -45,3 +45,28 @@
 .rowPartner {
   margin: 16px 0;
 }
+
+.centerRow{
+  display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
+    justify-content: center;
+}
+
+.faq {
+  width: 55%;
+  margin-top: 32px;
+}
+
+.faqContainer {
+  display: flex;
+  align-items: center;
+  padding: 8rem 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+.faq {
+    width: 92%;
+  }
+}
