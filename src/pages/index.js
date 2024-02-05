@@ -6,6 +6,7 @@ import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
 import Consortium from "../components/Homepage/consortium";
+import About from "../components/Homepage/About";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -38,6 +39,7 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
+        <About />
         <Consortium />
       </main>
     </Layout>

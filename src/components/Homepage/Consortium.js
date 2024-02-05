@@ -41,7 +41,7 @@ function Partner({ imageName, title, col = "4" }) {
           src={
             require(`@site/static/img/consortium-logos/` + imageName).default
           }
-          alt="fundigbox logo"
+          alt="logo"
           className={styles.partnerImg}
         />
       </div>

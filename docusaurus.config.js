@@ -12,8 +12,8 @@ const cofundedText =
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "OnePass Bridge - wiki",
-  tagline: "wiki",
-  favicon: "img/logo.png",
+  tagline: "WIKI",
+  favicon: "img/faviicon.png",
 
   // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
