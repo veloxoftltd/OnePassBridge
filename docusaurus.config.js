@@ -7,7 +7,8 @@
 import { themes as prismThemes } from "prism-react-renderer";
 
 const cofundedText =
-  "Co-funded by the European Union. This project has received funding from the European Union’s Horizon Europe programme under grant agreement No 101102657. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or European Health and Digital Executive Agency (HADEA). Neither the European Union nor the granting authority can be held responsible for them.";
+  "Co-funded by the European Union. This project has received funding from the European Union's Digital Europe Programme under grant agreement No 101102657. Views and opinions expressed are those of the author(s) only and do not necessarily reflect those of the European Union or the European Health and Digital Executive Agency (HADEA). Neither the European Union nor the granting authority can be held responsible."
+  //"Co-funded by the European Union. This project has received funding from the European Union’s Horizon Europe programme under grant agreement No 101102657. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or European Health and Digital Executive Agency (HADEA). Neither the European Union nor the granting authority can be held responsible for them.";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -92,7 +93,7 @@ const config = {
         style: "dark",
         logo: {
           alt: "Co funded by the EU",
-          src: "img/co-fundedbytheEU-white.png",
+          src: "img/co-fundedbytheEU-WHITE.png",
           height: 51,
         },
         copyright: `${cofundedText} <br> Copyright © ${new Date().getFullYear()} OnePass Bridge`,

@@ -5,7 +5,7 @@ import Layout from "@theme/Layout";
 
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
-import Consortium from "../components/Homepage/consortium";
+import Consortium from "../components/Homepage/Consortium";
 import About from "../components/Homepage/About";
 import FAQ from "../components/Homepage/FAQ";
 
