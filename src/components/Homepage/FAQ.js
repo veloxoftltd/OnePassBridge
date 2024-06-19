@@ -46,6 +46,36 @@ const questions = [
       </p>
     ),
   },
+  {
+    question: "What is OnePass Bridge?",
+    answer:
+      "OnePass Bridge is a limited pilot program that connects startups and SMEs with investors, enabling them to obtain financing based on a trust framework created by trusted operators of services to startups.",
+  },
+  {
+    question: "Who can use OnePass Bridge?",
+    answer:
+      "OnePass Bridge is designed for startups, SMEs, investors, accelerators, incubators, and trusted operators of services to startups. It provides a secure and efficient way to connect, verify identity and readiness, and access funding opportunities through an online platform. However, the pilot program is limited and invitation-based, and interested organizations need to enroll in a waitlist to get access. Some eligibility criteria may apply.",
+  },
+  {
+    question: "How does OnePass Bridge work?",
+    answer:
+      "OnePass Bridge creates a network of trusted operators of services to startups, who can verify the identity and readiness of startups. These verifications are then used to create a trust framework between startups and investors, enabling startups to obtain financing based on their verified credentials through an online platform.",
+  },
+  {
+    question: "How do I get started with OnePass Bridge?",
+    answer:
+      "To get started with OnePass Bridge, create an account, verify your identity and readiness as a startup or investor, and start connecting with other members of the ecosystem. However onboarding and acceptance in the pilot program is limited.",
+  },
+  {
+    question: "Is OnePass Bridge free to use?",
+    answer:
+      "Yes, OnePass Bridge is free to use for all members of the ecosystem. There are no signup costs or hidden fees, no minimum term or commitment.",
+  },
+  {
+    question: "How do I contact OnePass Bridge support?",
+    answer:
+      "If you have any questions or issues with OnePass Bridge, contact the support team by emailing support@getonepass.eu.",
+  },
 ];
 
 export default function FAQ() {
@@ -95,6 +125,7 @@ export default function FAQ() {
             }}
           >
             <Collapse
+              size="large"
               className={clsx(styles.faq)}
               accordion
               items={items.current}
