@@ -4,12 +4,15 @@
  */
 
 :root {
+  font-family: Avenir, Avenir LT Std, Lato, sans-serif;
+
   --color-primary: #ffd400;
   --color-light: #c2fffb;
   --color-white: #fafafa;
-  --color-dark: #010100;
+  --color-dark: #262f3d;
 
-  --ifm-color-primary: #592d4f;
+  --ifm-color-inverce: var(--color-dark);
+  --ifm-color-primary: #262f3d; /* #592d4f;*/
   --ifm-color-primary-dark: #502947;
   --ifm-color-primary-darker: #4c2643;
   --ifm-color-primary-darkest: #3e2037;
@@ -19,6 +22,7 @@
 }
 
 [data-theme="dark"] {
+  --ifm-color-inverce: var(--color-white);
   --ifm-color-primary: #ffd400;
   --ifm-color-primary-dark: #e6bf00;
   --ifm-color-primary-darker: #d9b400;
@@ -28,10 +32,41 @@
   --ifm-color-primary-lightest: #ffe14d;
 }
 
-/* .heroPrimary {
-  --ifm-hero-background-color: var(--color-primary);
+.heroPrimary {
   --ifm-hero-text-color: var(--color-dark);
-} */
+}
+
+.hero_title {
+  font-weight: 900 !important;
+  font-size: 4rem !important;
+}
+
+.hero_subtitle {
+  font-size: 1.7rem !important;
+}
+
+.label {
+  min-width: 2em;
+  min-height: 2em;
+  line-height: 1em;
+  text-align: center;
+  padding: 0.5em 0.6em 0.4em !important;
+
+  border-radius: 500rem;
+  border: 1px solid var(--ifm-color-inverce); /*rgba(34, 36, 38, 0.15);*/
+  --ifm-hero-text-color: var(--color-dark);
+
+  box-shadow: none;
+
+  font-size: 1.4rem;
+  font-weight: 600 !important;
+}
+
+.svg_label {
+  height: 1em;
+  vertical-align: -0.125em;
+  margin-right: 0.2em;
+}
 
 table th {
   background-color: var(--ifm-color-primary);
@@ -39,10 +74,14 @@ table th {
 }
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+
+  background: url(/static/img/onepass-hero-shapes.svg);
+  background-size: cover;
+  background-position: center;
 
   min-height: 40vh;
 }
@@ -57,4 +96,8 @@ table th {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.buttonPrimary {
+  background-color: var(--color-primary);
 }

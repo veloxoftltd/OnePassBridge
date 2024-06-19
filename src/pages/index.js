@@ -8,19 +8,28 @@ import styles from "./index.module.css";
 import Consortium from "../components/Homepage/Consortium";
 import About from "../components/Homepage/About";
 import FAQ from "../components/Homepage/FAQ";
+import Badge from "../components/Homepage/Badge";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header
+      className={clsx("heroPrimary", styles.heroBanner)} //hero hero--primary
+    >
+      <Badge text="OnePass Wiki" />
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className={clsx(styles.hero_title)}>
           OnePass Bridge
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className={clsx(styles.hero_subtitle)}>
+          Paving the way to the future of funding distribution
+        </p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className={clsx(
+              "button button--secondary button--lg",
+              styles.buttonPrimary
+            )}
             to="/docs/category/governance-framework"
           >
             See documentation

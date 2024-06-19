@@ -46,11 +46,11 @@
   margin: 16px 0;
 }
 
-.centerRow{
+.centerRow {
   display: flex;
-    flex-wrap: wrap;
-    margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
-    justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
+  justify-content: center;
 }
 
 .faq {
@@ -66,7 +66,30 @@
 }
 
 @media only screen and (max-width: 768px) {
-.faq {
+  .faq {
     width: 92%;
   }
+}
+
+.label {
+  min-width: 2em;
+  min-height: 2em;
+  line-height: 1em;
+  text-align: center;
+  padding: 0.5em 0.6em 0.4em !important;
+
+  border-radius: 500rem;
+  border: 1px solid var(--ifm-color-inverce); /*rgba(34, 36, 38, 0.15);*/
+  --ifm-hero-text-color: var(--color-dark);
+
+  box-shadow: none;
+
+  font-size: 1.4rem;
+  font-weight: 600 !important;
+}
+
+.svg_label {
+  height: 1em;
+  vertical-align: -0.125em;
+  margin-right: 0.2em;
 }
