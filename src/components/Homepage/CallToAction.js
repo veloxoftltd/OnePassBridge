@@ -20,6 +20,8 @@ export default function CallToAction() {
                 "button button--secondary button--lg",
                 styles.buttonPrimary
               )}
+              href="https://app.getonepass.eu/invite/rpScuPkmR6"
+              target="_blank"
             >
               Join the waitlist
             </Link>
