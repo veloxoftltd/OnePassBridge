@@ -7,6 +7,7 @@ import About from "../components/Homepage/About";
 import FAQ from "../components/Homepage/FAQ";
 import CallToAction from "../components/Homepage/CallToAction";
 import HomepageHeader from "../components/Homepage/HomepageHeader";
+import Divider from "../components/Homepage/Divider/Divider";
 
 export default function Home() {
   return (
@@ -16,7 +17,10 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
+        <Divider />
         <CallToAction />
+        <Divider />
+
         <About />
         <Consortium />
         <FAQ />

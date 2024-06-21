@@ -1,0 +1,9 @@
+.section_divider {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section_divider:not(.vertical):not(.horizontal) {
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
