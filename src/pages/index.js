@@ -11,10 +11,7 @@ import ImageWithTitle from "../components/Homepage/ImageWithTitle/ImageWithTitle
 
 export default function Home() {
   return (
-    <Layout
-      title={`OnePass Bridge Wiki`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout title={`OnePass Bridge Wiki`} description="OnePass Bridge Wiki">
       <HomepageHeader />
       <main>
         <Divider />

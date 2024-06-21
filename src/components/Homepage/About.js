@@ -19,10 +19,7 @@ export default function About() {
           <div className={clsx(`col `, styles.partnerBox)}>
             <div className="text--center">
               <img
-                src={
-                  require(`@site/static/img/homepage/3.3-enrollment-completed.png`)
-                    .default
-                }
+                src={require(`@site/static/img/ebsi-circle.png`).default}
                 alt="Welcome to OnePass Bridge"
                 className={clsx(styles.homeImg)}
               />
