@@ -32,18 +32,6 @@
   --ifm-color-primary-lightest: #ffe14d;
 }
 
-.heroPrimary {
-  --ifm-hero-text-color: var(--color-dark);
-}
-
-.hero_title {
-  font-weight: 900 !important;
-  font-size: 4rem !important;
-}
-
-.hero_subtitle {
-  font-size: 1.7rem !important;
-}
 
 .label {
   min-width: 2em;
@@ -73,31 +61,3 @@ table th {
   color: var(--ifm-font-color-base-inverse);
 }
 
-.heroBanner {
-  padding: 6rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-
-  background: url(/static/img/onepass-hero-shapes.svg);
-  background-size: cover;
-  background-position: center;
-
-  min-height: 40vh;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.buttonPrimary {
-  background-color: var(--color-primary);
-}

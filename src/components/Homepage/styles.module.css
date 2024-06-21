@@ -93,3 +93,63 @@
   vertical-align: -0.125em;
   margin-right: 0.2em;
 }
+
+.callToAction {
+  align-content: center;
+  justify-content: space-between;
+}
+
+.callToAction h2 {
+  text-align: left;
+  margin: 8px;
+  font-size: 1.7rem;
+  font-weight: 700 !important;
+}
+
+.callToAction_button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.heroBanner {
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  background: url(/static/img/onepass-hero-shapes.svg);
+  background-size: cover;
+  background-position: center;
+
+  min-height: 40vh;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.heroPrimary {
+  --ifm-hero-text-color: var(--color-dark);
+}
+
+.hero_title {
+  font-weight: 900 !important;
+  font-size: 4rem !important;
+}
+
+.hero_subtitle {
+  font-size: 1.7rem !important;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonPrimary {
+  background-color: var(--color-primary);
+}
