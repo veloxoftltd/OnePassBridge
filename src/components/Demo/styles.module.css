@@ -1,0 +1,212 @@
+
+.mobileDevice {
+  display: flex;
+  justify-content: center; /* Centers the phone horizontally */
+  align-items: center; /* Centers the phone vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.phoneBody {
+  width: 470px; /* Example width */
+  height: 820px; /* Example height */
+  background-color: #1a1a58; /* Example dark background color */
+  border-radius: 30px; /* Rounded corners */
+  padding: 10px; /* Space between the body and the screen */
+  position: relative; /* For absolute positioning of internal elements */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+.phoneScreen {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* White screen background */
+  border-radius: 20px; /* Rounded corners for the screen */
+  overflow: hidden; /* Ensures content stays within the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topNotch {
+  width: 130px; /* Width of the notch */
+  height: 20px; /* Height of the notch */
+  background-color: #232526; /* Color of the notch */
+  border-radius: 0 0 45px 45px; /* Creates the rounded bottom of the notch */
+  margin: 0 auto; /* Centers the notch */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.header h2 {
+  font-size: 52px;
+  text-align: center;
+}
+
+.titleSection {
+  height: auto;
+  line-height: 1;
+  text-align: center;
+
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.homeImg {
+  max-height: 600px;
+}
+
+.partners {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.partnerImg {
+  max-height: 120px;
+  max-width: 250px;
+}
+
+.partnerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.partnerBox img {
+  margin: 32px 0;
+}
+
+.partnerText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.partnerText h3 {
+  margin: 0;
+}
+
+.rowPartner {
+  margin: 16px 0;
+}
+
+.centerRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
+  justify-content: center;
+}
+
+.faq {
+  width: 85%;
+  margin-top: 32px;
+}
+
+.faqContainer {
+  display: flex;
+  align-items: center;
+  padding: 8rem 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .faq {
+    width: 92%;
+  }
+}
+
+.label {
+  min-width: 2em;
+  min-height: 2em;
+  line-height: 1em;
+  text-align: center;
+  padding: 0.5em 0.6em 0.4em !important;
+
+  border-radius: 500rem;
+  border: 1px solid var(--ifm-color-inverce); /*rgba(34, 36, 38, 0.15);*/
+  --ifm-hero-text-color: var(--color-dark);
+
+  box-shadow: none;
+
+  font-size: 1.4rem;
+  font-weight: 600 !important;
+}
+
+.svg_label {
+  height: 1em;
+  vertical-align: -0.125em;
+  margin-right: 0.2em;
+}
+
+.callToAction {
+  align-content: center;
+  justify-content: space-between;
+}
+
+.callToAction h2 {
+  text-align: left;
+  margin: 8px;
+  font-size: 1.7rem;
+  font-weight: 700 !important;
+}
+
+.callToAction_button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.heroBanner {
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  background: url(/static/img/onepass-hero-shapes.svg);
+  background-size: cover;
+  background-position: center;
+
+  min-height: 40vh;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.heroPrimary {
+  --ifm-hero-text-color: var(--color-dark);
+}
+
+.hero_title {
+  font-weight: 900 !important;
+  font-size: 4rem !important;
+}
+
+.hero_subtitle {
+  font-size: 1.7rem !important;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonPrimary {
+  background-color: var(--color-primary);
+}
